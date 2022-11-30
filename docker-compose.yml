@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  production_info_bot:
+    build: .
+    restart: unless-stopped
+    image: production_info_bot
+    container_name: production_info_bot_co
+    volumes:
+      - "/etc/timezone:/etc/timezone:ro"
+      - "/etc/localtime:/etc/localtime:ro"

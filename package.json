@@ -1,0 +1,35 @@
+{
+  "name": "production_info_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.ts",
+  "scripts": {
+    "start": "ts-node -r dotenv/config src/index.ts",
+    "dev": "npx nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "dom-to-image": "^2.6.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "html-to-image": "^1.10.8",
+    "jimp": "^0.16.1",
+    "jsdom": "^20.0.1",
+    "node-html-to-image": "^3.2.4",
+    "puppeteer": "^13.5.2",
+    "serve": "^14.0.1",
+    "telegraf": "^4.7.0",
+    "telegraf-session-local": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/dom-to-image": "^2.6.4",
+    "@types/express": "^4.17.13",
+    "@types/jsdom": "^20.0.0",
+    "@types/node": "^17.0.18",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  }
+}

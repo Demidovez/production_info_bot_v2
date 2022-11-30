@@ -1,0 +1,113 @@
+(function() {
+
+document.getElementById('alpha089').addEventListener('update', function() {
+var procent = Math.min(alpha089.value || 0, 100);
+
+if(procent > 0) {
+	if(procent >= 50) {
+		group016.style.visibility = "hidden";
+
+		group014.style.visibility = "visible";
+		group014.style.transform = "rotate(" + (360/(100/procent)) + "deg)";
+	} else {
+		group016.style.visibility = "visible";
+		group016.style.transform = "rotate(" + (360/(100/procent)) + "deg)";
+	}
+}
+}, false);
+
+document.getElementById('alpha082').addEventListener('update', function() {
+var procent = Math.min(alpha082.value || 0, 100);
+
+if(procent > 0) {
+	if(procent >= 50) {
+		group022.style.visibility = "hidden";
+
+		group020.style.visibility = "visible";
+		group020.style.transform = "rotate(" + (360/(100/procent)) + "deg)";
+	} else {
+		group022.style.visibility = "visible";
+		group022.style.transform = "rotate(" + (360/(100/procent)) + "deg)";
+	}
+}
+}, false);
+
+document.getElementById('alpha086').addEventListener('update', function() {
+var date = new Date(alpha086.value);
+alpha086.value = date.getHours() + ':' + date.getMinutes();
+}, false);
+
+document.getElementById('alpha085').addEventListener('update', function() {
+var date = new Date(alpha085.value);
+alpha085.value = date.toLocaleDateString('ru-RU', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  });
+}, false);
+
+document.getElementById('alpha001').addEventListener('update', function() {
+if (alpha001.value >= 0) {
+	alpha001.textColor = "#047F0B";
+	textbox001.value = "+";
+	textbox001.style.color = "#047F0B";
+} else {
+    alpha001.value = Math.abs(alpha001.value);
+	alpha001.textColor = "#cc0000";
+	textbox001.value = "-";
+	textbox001.style.color = "#FF0000";
+}
+}, false);
+
+document.getElementById('alpha002').addEventListener('update', function() {
+if (alpha002.value >= 0) {
+	alpha002.textColor = "#047F0B";
+	textbox003.value = "+";
+	textbox003.style.color = "#047F0B";
+} else {
+    alpha002.value = Math.abs(alpha002.value);
+	alpha002.textColor = "#cc0000";
+	textbox003.value = "-";
+	textbox003.style.color = "#FF0000";
+}
+}, false);
+
+document.getElementById('alpha003').addEventListener('update', function() {
+if (alpha003.value >= 0) {
+	alpha003.textColor = "#047F0B";
+	textbox004.value = "+";
+	textbox004.style.color = "#047F0B";
+} else {
+    alpha003.value = Math.abs(alpha003.value);
+	alpha003.textColor = "#cc0000";
+	textbox004.value = "-";
+	textbox004.style.color = "#FF0000";
+}
+}, false);
+
+document.getElementById('alpha004').addEventListener('update', function() {
+if (alpha004.value >= 0) {
+	alpha004.textColor = "#047F0B";
+	textbox005.value = "+";
+    textbox005.style.color = "#047F0B";
+} else {
+    alpha004.value = Math.abs(alpha004.value);
+	alpha004.textColor = "#cc0000";
+	textbox005.value = "-";
+	textbox005.style.color = "#FF0000";
+}
+}, false);
+
+document.getElementById('alpha006').addEventListener('update', function() {
+if (alpha006.value >= 0) {
+	alpha006.textColor = "#047F0B";
+	textbox006.value = "+";
+	textbox006.style.color = "#047F0B";
+} else {
+    alpha006.value = Math.abs(alpha006.value);
+	alpha006.textColor = "#cc0000";
+	textbox006.value = "-";
+	textbox006.style.color = "#FF0000";
+}
+}, false);
+})();
