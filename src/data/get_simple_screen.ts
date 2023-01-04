@@ -2,7 +2,6 @@ import Jimp from "jimp";
 import path from "path";
 import { IScreen } from "../types/types";
 import puppeteer from "puppeteer";
-import axios from "axios";
 
 export const getSimpleScreen = async (screen: IScreen): Promise<string> => {
   return new Promise<string>(async (resolve, reject) => {
@@ -17,12 +16,6 @@ export const getSimpleScreen = async (screen: IScreen): Promise<string> => {
       });
 
       const page = await browser.newPage();
-
-      const screenHtml = await axios.get(
-        "http://172.27.70.9/screens/For_bot/Product_info_product.htm"
-      );
-
-      // console.log((await getData).data);
 
       await page.goto(
         `file:${path.join(
