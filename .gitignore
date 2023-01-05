@@ -58,5 +58,12 @@ buck-out/
 # CocoaPods
 /ios/Pods/
 .env*
+<<<<<<< HEAD
 sessions_db*
 users.txt
+=======
+users.txt
+*.png
+html/index_*
+sessions_db*
+>>>>>>> 8b6f483 (fix private files)

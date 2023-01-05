@@ -16,8 +16,13 @@ export const generatePages = async (): Promise<IPages> => {
         const page = await browser.newPage();
 
         await page.authenticate({
+<<<<<<< HEAD
           username: process.env.USERNAME,
           password: process.env.PASSWORD,
+=======
+          username: process.env.USERNAME!,
+          password: process.env.PASSWORD!,
+>>>>>>> 8b6f483 (fix private files)
         });
 
         await page.goto(
